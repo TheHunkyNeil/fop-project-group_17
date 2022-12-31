@@ -10,7 +10,7 @@ function addNewVocabulary() {
   //remove dialogBox will display the word box interface
 }
 
-// The popup in training mode----------------------------------------------------
+// The popup in training mode---------------------------------------
 function trainGame(mode) {
   //This mode depends on the number in the html
   gamemode = mode;
@@ -23,7 +23,7 @@ function trainGame(mode) {
   //If there is no this one, it will not trigger the prompt that the question bank is empty
 }
 
-// Confirm adding word button--------------------------------------------
+// Confirm adding word button----------------------------------------------------
 function submitAddVocabulary() {
   let english = document.querySelector("#english");
   let swedish = document.querySelector("#swedish");
