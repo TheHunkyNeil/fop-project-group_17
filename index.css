@@ -27,7 +27,7 @@ body {
 
 li:hover ul#pullDown {
   visibility: visible;
-  /* Hide the drop-down when there is nothing to do, only when the mouse is placed on the drop-down */
+  /* Hide the drop-down when nothing to do, only when the mouse is placed on the drop-down */
 }
 
 .nav {
