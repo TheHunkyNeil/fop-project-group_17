@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#pullDown span:hover {
+  background: #f86133;
+  /* Change the background of the drop-down mouse */
+}
+
+.twoTitle {
+  display: block;
+  margin-bottom: 41px;
+  /* Used to adjust the distance for the following words */
+  font-weight: bold;
+}
+
+#pullDown span {
+  background-color: #6192f4;
+  /* Change the background of the dropdown */
+}
+
+.learningProgress {
+  display: flex;
+  justify-content: center;
+}
+
+li:hover ul#pullDown {
+  visibility: visible;
+  /* Hide the drop-down when there is nothing to do, only when the mouse is placed on the drop-down */
+}
+
+.nav {
+  margin-bottom: 311px;
+  background-color: #f9b175;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* used to control the length of the pull-down is the same as above */
+  list-style: none;
+}
+
+#pullDown li {
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.navbar span {
+  background: #5288f5;
+  /* background color */
+  cursor: pointer;
+  /* After pulling down, the mouse stays above a hand */
+  color: #f6f3f3;
+  /* word color */
+  padding: 11px 36px;
+  /* The size of the border around the word */
+  text-align: center;
+  /* Whether the word is centered after the pull-down */
+  display: block;
+  /* The background size is the same as the border around the word */
+}
+
+dialog {
+  width: auto;
+  height: auto;
+  display: block;
+  background-color: rgba(248, 23, 23, 0.5);
+  /* The background when the frame comes out */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.box {
+  padding: 24px;
+  margin-left: 13px;
+  width: 36%;
+  border-style: outset;
+  /* use a protruding border */
+}
+
+.navbar li:hover span {
+  background: #f46337;
+  /* Change the background of the mouse over */
+}
+
+input {
+  font-size: 18px;
+  padding: 25px 10px 10px 5px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #7d7d7d;
+  /* width, style,color */
+}
+
+#pullDown {
+  visibility: hidden;
+  /* Hide the drop-down when there is nothing to do, only when the mouse is placed on the drop-down */
+  position: absolute;
+  /* otherwise the navigation bar will be too big */
+}
+
+.dialogFrame {
+  width: 411px;
+  /* When the width of the frame */
+}
+
+.form {
+  padding-top: 0px;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0;
+  float: left;
+  position: relative;
+  /* try one by one relative*/
+  padding: 0;
+}
+
+.set {
+  margin-top: 41px;
+}
+
+.dialogFrame {
+  width: 411px;
+  /* When the width of the frame */
+}
+
+.frame span {
+  padding: 6px 11px;
+  border-style: outset;
+  /* use a protruding border for the word box */
+}
+
+label {
+  left: 6px;
+  font-size: 21px;
+  top: -21px;
+  color: rgb(42, 40, 40);
+  position: absolute;
+}
+
+.cancel:hover {
+  background: rgb(167, 87, 241);
+}
+
+.cancel {
+  background: rgb(151, 51, 244);
+  border: none;
+}
+
+.submit {
+  background: rgb(118, 179, 91);
+  border: none;
+}
+
+.set {
+  position: relative;
+}
+
+.submit:hover {
+  background: rgb(93, 196, 84);
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 11px 26px;
+  /* up and down, right and left */
+  color: rgb(247, 241, 241);
+  cursor: pointer;
+}
+
+.dialogFrame {
+  margin-top: 10%;
+  margin-right: auto;
+  border-radius: 11px;
+  /* radians of the 4 corners */
+  margin-left: auto;
+  background-color: rgb(255, 255, 255);
+  /* frame background */
+  padding: 31px;
+  /* is the size of the entire frame */
+}
+
+.dialogBox {
+  display: none;
+  /* The display property also allows to show or hide the element. Similar to the visibility property. If display:none is set, the entire element will be hidden */
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocabulary Learning</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <section class="nav">
+      <nav class="navbar">
+        <ul>
+          <li>
+            <span>My vocabulary</span>
+          </li>
+
+          <li>
+            <span class="addNewVocabulary" onclick="addNewVocabulary()"
+              >Add new vocabulary</span
+            >
+          </li>
+
+          <li>
+            <span>Training Mode</span>
+            <ul id="pullDown">
+              <!-- The hidden drop-down menu is used -->
+              <li><span onclick="trainGame('0')">All</span></li>
+              <li><span onclick="trainGame('1')">Not passed</span></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="learningProgress">
+      <!-- The two boxes below my progress, one is passed and the other is not passed -->
+      <div class="box">
+        <span class="twoTitle">Passed</span>
+        <div class="passedVocabulary frame">
+          <empty>There is no vocabulary here, just add it!</empty>
+        </div>
+      </div>
+
+      <div class="box">
+        <span class="twoTitle">Not Passed</span>
+        <div class="notPassedVocabulary frame">
+          <empty>There is no vocabulary here, just add it!</empty>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is the box for adding words that pops up after clicking Add Words -->
+    <dialog id="addVocabulary" class="dialogBox">
+      <div class="dialogFrame">
+        <div class="form">
+          <div class="set">
+            <label>English</label>
+            <input type="text" id="english" />
+          </div>
+
+          <div class="set">
+            <label>Swedish</label>
+            <input type="text" id="swedish" />
+          </div>
+
+          <div class="set">
+            <button class="cancel btn" onclick="cancelAddVocabulary()">
+              Cancel
+            </button>
+            <button class="submit btn" onclick="submitAddVocabulary()">
+              Add
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- This is the training frame that pops up after clicking the training mode -->
+    <dialog id="trainMode" class="dialogBox">
+      <div class="dialogFrame">
+        <div class="form">
+          <div class="set">
+            <label>English</label>
+            <input type="text" id="Englishwords" />
+          </div>
+
+          <div class="set">
+            <label>Swedish</label>
+            <input type="text" id="Swedishwords" />
+          </div>
+
+          <div class="set">
+            <button class="cancel btn" onclick="cancelGame()">Cancel</button>
+            <button class="submit btn" onclick="nextVocabulary()">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <script src="index.js"></script>
+  </body>
+</html>
