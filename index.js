@@ -216,7 +216,7 @@ function checkVocabulary() {
   refreshVocabulary();
 }
 
-// Refresh the page after loading-------------------------------------------------
+// Refresh the page-------------------------------------------------
 window.onload = () => {
   //window.onload() The method is used to perform the refresh operation immediately after the webpage is loaded
   vocabularyList = JSON.parse(localStorage.getItem("vocabularyList")) || [];
