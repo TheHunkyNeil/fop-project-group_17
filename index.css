@@ -11,12 +11,12 @@ body {
 .twoTitle {
   display: block;
   margin-bottom: 41px;
-  /* Used to adjust the distance for the following words */
+  /* Used to adjust the distance for the following*/
   font-weight: bold;
 }
 
 #pullDown span {
-  background-color: #6192f1;
+  background-color: #6192f4;
   /* Change the background of the dropdown */
 }
 
